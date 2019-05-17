@@ -11,11 +11,17 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "axios": "^0.18.0",
     "fastclick": "^1.0.6",
+    "gulp-qiniu": "^0.2.4",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "lib-flexible": "^0.3.2",
+    "normalize.css": "^8.0.1",
     "style-loader": "^0.23.1",
     "vue": "^2.5.2",
+    "vue-clipboard2": "^0.3.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

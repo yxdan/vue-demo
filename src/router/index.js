@@ -14,6 +14,10 @@ export default new Router({
     {
       path: '/home',
       component: resolve => require([ '@/pages/home.vue' ], resolve)
+    },
+    {
+      path: '/menu/home',
+      component: resolve => require([ '@/pages/menu/home.vue' ], resolve)
     }
   ]
 })

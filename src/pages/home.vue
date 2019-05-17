@@ -1,5 +1,6 @@
 <template>
   <div class="test">
+    <v-title>测试</v-title>
     全选<input type="checkbox" v-model="checkAll"/><hr><input type="checkbox" v-for="(item, index) of checkList" :key='index' v-model="item.value">
     <br>
     用户名字：<p>{{fullName}}</p>
@@ -7,6 +8,7 @@
 </template>
 
 <script>
+import VTitle from '@/compontents/title/title'
 export default {
   name: 'home',
   data () {
@@ -21,6 +23,9 @@ export default {
       firstName: '小',
       lastName: '明'
     }
+  },
+  components: {
+    VTitle
   },
   computed: {
     // 是同步的

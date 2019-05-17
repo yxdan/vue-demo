@@ -1,0 +1,42 @@
+// 声明变量
+@red_color: #DF3031;
+@org_color: #FD6D44;
+@gray_color: #343434;
+// 多余显示为...
+.noSpace(@line:2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+
+// 默认参数
+.border(@border_width:1px,@border_color:#e7e7e7) {
+  border-bottom: solid @border_color @border_width;
+}
+
+.border_radius(@radius:4px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+// 带参数
+.border_arg(@w:1px,@c:#e7e7e7,@xx:solid) {
+  border: @arguments;
+}
+
+// 简单的匹配模式
+.pos(r) {
+  position: relative;
+}
+
+.pos(f) {
+  position: fixed;
+}
+
+.pos(a) {
+  position: absolute;
+}
